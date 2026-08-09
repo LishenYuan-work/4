@@ -4,6 +4,8 @@ import uniPlugin from '@dcloudio/vite-plugin-uni'
 const uni = (uniPlugin as { default?: () => unknown }).default ?? uniPlugin
 
 export default defineConfig({
+  // GitHub Pages serves this project below /2/, so generated assets must be relative.
+  base: './',
   plugins: [uni()],
   server: {
     host: '0.0.0.0',
