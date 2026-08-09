@@ -1,0 +1,7 @@
+{
+  "name": "fresh-shop-minipro-server",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "node --watch index.mjs", "start": "node index.mjs" },
+  "dependencies": { "cors": "latest", "express": "latest" }
+}

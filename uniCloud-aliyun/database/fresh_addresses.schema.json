@@ -1,0 +1,15 @@
+{
+  "bsonType": "object",
+  "permission": { "read": false, "create": false, "update": false, "delete": false },
+  "required": ["id", "ownerId", "receiver", "phone", "detail", "isDefault", "createdAt"],
+  "properties": {
+    "id": { "bsonType": "string", "index": true },
+    "ownerId": { "bsonType": "string", "index": true },
+    "receiver": { "bsonType": "string" },
+    "phone": { "bsonType": "string", "pattern": "^1[3-9]\\d{9}$" },
+    "detail": { "bsonType": "string", "minLength": 6 },
+    "isDefault": { "bsonType": "bool" },
+    "createdAt": { "bsonType": "int" },
+    "updatedAt": { "bsonType": "int" }
+  }
+}

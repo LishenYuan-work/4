@@ -1,0 +1,13 @@
+{
+  "pages": [
+    { "path": "pages/index/index", "style": { "navigationStyle": "custom", "navigationBarTextStyle": "black" } }
+  ],
+  "globalStyle": {
+    "navigationBarTitleText": "鲜达集市",
+    "navigationBarBackgroundColor": "#f4f8f1",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f4f8f1",
+    "app-plus": { "background": "#f4f8f1" }
+  },
+  "subPackages": []
+}

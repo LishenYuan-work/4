@@ -1,0 +1,22 @@
+{
+  "bsonType": "object",
+  "permission": { "read": true, "create": false, "update": false, "delete": false },
+  "required": ["id", "name", "category", "price", "stock", "onSale"],
+  "properties": {
+    "id": { "bsonType": "string", "description": "商品业务编号", "unique": true, "index": true },
+    "name": { "bsonType": "string" },
+    "category": { "bsonType": "string" },
+    "price": { "bsonType": "number", "minimum": 0 },
+    "unit": { "bsonType": "string" },
+    "stock": { "bsonType": "int", "minimum": 0 },
+    "sales": { "bsonType": "int", "minimum": 0 },
+    "origin": { "bsonType": "string" },
+    "spec": { "bsonType": "string" },
+    "freshness": { "bsonType": "string" },
+    "description": { "bsonType": "string" },
+    "image": { "bsonType": "string" },
+    "tags": { "bsonType": "array", "items": { "bsonType": "string" } },
+    "onSale": { "bsonType": "bool" },
+    "updatedAt": { "bsonType": "int" }
+  }
+}
